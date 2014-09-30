@@ -13,6 +13,9 @@ module FishEaters
     puts "#{@name} is eating.  This has been logged."
     Log.add_to_log(@name)
   end
+  def show
+    p "#{@name} is an animal that eats fish"
+  end
 end
 
 class Panda
@@ -31,6 +34,8 @@ end
 
 panda = Panda.new
 shark = Shark.new
+panda.show
+shark.show
 panda.eat
 panda.eat
 shark.eat
